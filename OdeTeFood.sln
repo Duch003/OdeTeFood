@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{919F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeTeFood.Core", "OdeTeFood.Core\OdeTeFood.Core.csproj", "{D7D9B897-23C4-4F74-95B2-3DC340D182C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeTeFood.Data", "OdeTeFood.Data\OdeTeFood.Data.csproj", "{E01851C7-5EB5-47A0-A28F-A7024FD8D8BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D7D9B897-23C4-4F74-95B2-3DC340D182C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7D9B897-23C4-4F74-95B2-3DC340D182C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7D9B897-23C4-4F74-95B2-3DC340D182C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E01851C7-5EB5-47A0-A28F-A7024FD8D8BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E01851C7-5EB5-47A0-A28F-A7024FD8D8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E01851C7-5EB5-47A0-A28F-A7024FD8D8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E01851C7-5EB5-47A0-A28F-A7024FD8D8BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
