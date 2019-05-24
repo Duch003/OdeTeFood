@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{919F1F0A-58EB-47F3-8FDB-DAFFB603C559}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI", "UI\UI.csproj", "{919F1F0A-58EB-47F3-8FDB-DAFFB603C559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeTeFood.Core", "OdeTeFood.Core\OdeTeFood.Core.csproj", "{D7D9B897-23C4-4F74-95B2-3DC340D182C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeTeFood.Core", "OdeTeFood.Core\OdeTeFood.Core.csproj", "{D7D9B897-23C4-4F74-95B2-3DC340D182C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeTeFood.Data", "OdeTeFood.Data\OdeTeFood.Data.csproj", "{E01851C7-5EB5-47A0-A28F-A7024FD8D8BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeTeFood.Data", "OdeTeFood.Data\OdeTeFood.Data.csproj", "{E01851C7-5EB5-47A0-A28F-A7024FD8D8BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
