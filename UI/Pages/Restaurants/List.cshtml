@@ -1,58 +1,32 @@
 ﻿@page
 @model UI.Pages.Restaurants.ListModel
 @{
+    ViewData["Title"] = "List";
 }
 <h1>Restaurant</h1>
 
 <form method="get">
     <div class="form-group">
         <div class="input-group">
-            <input type="search" class="form-control" asp-for="SearchTerm" name="searchTerm"/>
+            <input type="search" class="form-control" asp-for="SearchTerm" name="searchTerm" />
             <span class="input-group-btn">
                 <button class="btn btn-default">
                     <i class="glyphicon glyphicon-search"></i>
                 </button>
             </span>
-            
+
         </div>
     </div>
 </form>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Location</th>
-            <th scope="col">Cuizine</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach(var item in Model.Restaurants)
-        {
-        <tr>
-            <td>@item.Name</td>
-            <td>@item.Location</td>
-            <td>@item.Cuisine</td>
-            <td>
-                <a class="btn btn-lg" asp-page="./Detail" asp-route-restaurantId="@item.ID">
-                    <i class="glyphicon glyphicon-zoom-in"></i>
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-lg" asp-page="./Edit" asp-route-restaurantId="@item.ID">
-                    <i class="glyphicon glyphicon-edit"></i>
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-lg" asp-page="./Remove" asp-route-restaurantId="@item.ID">
-                    <i class="glyphicon glyphicon-trash"></i>
-                </a>
-            </td>
-        </tr>
-        }
-    </tbody>
-</table>
+@foreach(var restaurant in Model.Restaurants)
+{
+    <partial name="_Summary" model="restaurant" />
+}
 
 <a asp-page="./Edit" class="btn btn-primary">Add new</a>
 
-<div>@Model.Message</div>
+@section footer {
+    <div>@Model.Message</div>
+}
+
