@@ -57,11 +57,29 @@ namespace UI
                 app.UseHsts();
             }
 
+            app.Use(SayHelloMiddleware);
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseNodeModules(env);
 
             app.UseMvc();
+        }
+
+        private RequestDelegate SayHelloMiddleware(RequestDelegate next)
+        {
+            return async ctx =>
+            {
+                if (ctx.Request.Path.StartsWithSegments("//hello"))
+                {
+                    await ctx.Response.WriteAsync("Hello World!");
+                }
+                else
+                {
+                    await next(ctx);
+                }
+            };
         }
     }
 }
